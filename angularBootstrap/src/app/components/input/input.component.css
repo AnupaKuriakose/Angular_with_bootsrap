@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+}
+form{
+    
+    padding: 16px;
+   display: inline-block;
+   margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+.mainDiv{
+    text-align: center;
+    background-color: #f2f2f2;
+    border-radius:15px;
+}
+
+
+

@@ -1,0 +1,26 @@
+<ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+  <li [ngbNavItem]="1">
+    <a ngbNavLink routerLinkActive="active" [routerLink]="'/home'">Home</a>
+  </li>
+  <li [ngbNavItem]="2">
+    <a ngbNavLink routerLinkActive="active" [routerLink]="'/carousal'">Carousal</a>
+  </li>
+
+  <li [ngbNavItem]="3">
+    <a ngbNavLink routerLinkActive="active" [routerLink]="'/table'">Table</a>
+  </li>
+  <li [ngbNavItem]="4">
+    <a ngbNavLink routerLinkActive="active" [routerLink]="'/datepicker'">Datepicker</a>
+  </li>
+  <li [ngbNavItem]="5">
+    <a ngbNavLink routerLinkActive="active" [routerLink]="'/employee'">Employee table</a>
+  </li>
+  <li [ngbNavItem]="6">
+    <a ngbNavLink routerLinkActive="active" [routerLink]="'/input'">Input form</a>
+  </li>
+</ul>
+
+<div [ngbNavOutlet]="nav" class="mt-2"></div>
+
+<pre>Active: {{ active }}</pre>
+<router-outlet></router-outlet>
